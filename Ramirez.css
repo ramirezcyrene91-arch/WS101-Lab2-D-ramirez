@@ -1,0 +1,212 @@
+/* Ramirez.css */
+
+*	{
+    Box-sizing: border-box;
+  }
+  
+  .Body {
+    Margin: 0;
+    Font-family: ‘Segoe UI’, Tahoma, Geneva, Verdana, sans-serif;
+    Background: #fff;
+    Color: #212121; 
+  }  
+  .sidebar {
+    Background: #2d2d2d; 
+    Color: #e0e0e0; 
+    Width: 350px;
+    Padding: 32px 24px;
+    Display: flex;
+    Flex-direction: column;
+    Gap: 32px;
+  }
+  
+  .photo-container img {
+    Display: flex;
+    Max-width: 300px;
+    Width: 750%;
+    Border-radius: 6px;
+    Margin-bottom: 5px;
+    Object-fit: cover;
+  }
+  
+  .section h2 {
+    Margin: 0 0 16px 0;
+    Font-weight: 700;
+    Font-size: 0.85rem;
+    Letter-spacing: 3.0px;
+    Text-transform: uppercase;
+    Color: gray; 
+    Border-bottom: 1px solid #444; 
+    Padding-bottom: 8px;
+  }
+  
+  .section p,
+  .section ul,
+  .section span {
+    Font-size: 0.9rem;
+    Line-height: 1.3;
+    Margin: 6px 0;
+    Color: black;
+  }
+  
+  .section ul {
+    List-style: none;
+    Padding-left: 0;
+  }
+  
+  .section ul li {
+    Margin-bottom: 6px;
+    Padding-left: 10px;
+    Position: relative;
+  }
+  
+  .section ul li::before {
+    Content: ‘•’;
+    Position: absolute;
+    Left: 0;
+    Color: #a8a8a8;
+    Font-weight: bold;
+  }
+  
+  .sidebar strong {
+    Font-weight: 600;
+  }
+  
+  
+  .main-content {
+    Flex: 1;
+    Padding: 32px 48px;
+    Color: #111827; 
+    Display: flex;
+    Flex-direction: column;
+    Gap: 2px;
+  }
+  
+  .main-header h1 {
+    Margin: 0;
+    Font-weight: 900;
+    Font-size: 2.25rem;
+    Letter-spacing: 0.1em;
+    Text-transform: uppercase;
+    Color: #111827; 
+    Line-height: 1;
+  }
+  
+  .main-header h1 strong {
+    Font-weight: 900;
+    Letter-spacing: 0.15em;
+  }
+  
+  .main-header h3 {
+    Margin: 4px 0 0 0;
+    Font-weight: 500;
+    Font-size: 1.25rem;
+    Color: #6b7280; 
+    Letter-spacing: 0.02em;
+  }
+  
+  .section.about p {
+    Font-size: 1rem;
+    Color: #374151; 
+    Line-height: 1.45;
+    Margin-top: 12px;
+  }
+  
+  .section.experience .job {
+    Margin-bottom: 24px;
+    Border-bottom: 1px solid #d1d5db; 
+    Padding-bottom: 12px;
+  }
+  
+  .job-header {
+    Display: flex;
+    Justify-content: space-between;
+    Margin-bottom: 4px;
+  }
+  
+  .job-header .title {
+    Font-size: 1rem;
+    Font-weight: 600;
+    Text-transform: uppercase;
+    Letter-spacing: 0.05em;
+    Color: #111827; 
+  }
+  
+  .job-header .years {
+    Font-size: 0.85rem;
+    Color: #6b7280; 
+    Font-weight: 500;
+  }
+  
+  .job strong {
+    Display: block;
+    Font-weight: 700;
+    Font-size: 1.1rem;
+    Margin-bottom: 8px;
+    Color: #374151;
+  }
+  
+  .job ul {
+    Margin: 0;
+    Padding-left: 20px;
+    List-style: disc;
+    Color: #4b5563; 
+    Font-size: 0.9rem;
+  }
+  
+  .job ul li {
+    Margin-bottom: 6px;
+    Color: #4b5563;
+  }
+  
+  
+  .references {
+    Border-top: 1px solid #d1d5db;
+    Padding-top: 20px;
+  }
+  
+  .award-row {
+    Display: flex;
+    Gap: 48px;
+    Flex-wrap: wrap;
+  }
+  
+  .award {
+    Flex: 1;
+    Min-width: 200px;
+    Color: #374151;
+  }
+  
+  .reference strong {
+    Font-weight: 700;
+    Font-size: 1rem;
+  }
+  
+  .reference span {
+    Font-size: 0.85rem;
+    Line-height: 1.3;
+  }
+  
+  .reference span strong {
+    Font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .sidebar {
+      Width: 100%;
+      Padding: 24px 20px;
+    }
+    .main-content {
+      Padding: 24px 20px 40px 20px;
+    }
+    .award-row {
+      Flex-direction: column;
+      Gap: 16px;
+    }
+  }
+
